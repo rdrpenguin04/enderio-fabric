@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "enderio-fabric",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Ender IO",
+  "description": "Ender IO rewritten in Fabric",
   "authors": [
-    "Me!"
+    "Ported by Ray Redondo"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": "https://github.com/rdrpenguin04/enderio-fabric"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "",
+  "icon": "assets/enderio-fabric/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.lightning.enderio.Mod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "enderio-fabric.mixins.json"
   ],
 
   "depends": {
