@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.lightning.enderio.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "BlockUpdateMixin"
+  ],
+  "client": [],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
