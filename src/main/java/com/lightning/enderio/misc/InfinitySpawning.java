@@ -13,6 +13,7 @@ public class InfinitySpawning {
     public static class BedrockLightListener implements BlockUpdateCallback {
         @Override
         public ActionResult onBlockUpdate(World world, BlockPos pos, Block block, BlockPos posFrom) {
+			if(!pos.equals(posFrom.down())) return ActionResult.PASS;
         	final boolean isFire = world.getBlockState(posFrom).getBlock() instanceof FireBlock;
         	final int posIdx = posFrom.hashCode() + world.getDimension().hashCode()*31;
         	final long worldTime = world.getTime();
