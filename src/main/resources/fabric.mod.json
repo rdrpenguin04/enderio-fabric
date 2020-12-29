@@ -1,11 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "enderio-fabric",
+  "id": "enderio",
   "version": "${version}",
 
   "name": "Ender IO",
   "description": "Ender IO rewritten in Fabric",
   "authors": [
+    "CrazyPants",
+    "tterrag",
+    "HenryLoenwind",
+    "MatthiasM",
+    "CyanideX",
+    "EpicSquid",
     "Ported by Ray Redondo"
   ],
   "contact": {
@@ -14,7 +20,7 @@
   },
 
   "license": "",
-  "icon": "assets/enderio-fabric/icon.png",
+  "icon": "assets/enderio/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -23,15 +29,12 @@
     ]
   },
   "mixins": [
-    "enderio-fabric.mixins.json"
+    "enderio.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
     "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
