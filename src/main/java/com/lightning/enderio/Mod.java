@@ -13,5 +13,6 @@ public class Mod implements ModInitializer {
 		// Proceed with mild caution.
 
 		BlockUpdateCallback.EVENT.register(new InfinitySpawning.BedrockLightListener());
+		EIOItems.registerAll();
 	}
 }
