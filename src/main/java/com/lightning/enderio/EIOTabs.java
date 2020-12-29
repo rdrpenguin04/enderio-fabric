@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class EIOTabs {
-	public static final ItemGroup EIOMATERIAL_GROUP = FabricItemGroupBuilder.build(
-			new Identifier("enderio", "material"),
+    public static final ItemGroup EIOMATERIAL_GROUP = FabricItemGroupBuilder.build(
+            new Identifier("enderio", "material"),
 			() -> new ItemStack(Blocks.COBBLESTONE));
 }
