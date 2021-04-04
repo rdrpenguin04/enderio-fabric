@@ -4,7 +4,6 @@ import com.lightning.enderio.util.BlockUpdateCallback;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock.AbstractBlockState;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -19,6 +18,6 @@ public class BlockUpdateMixin {
     private void blockUpdateTrigger(World world, BlockPos pos, Block block, BlockPos posFrom, boolean _notify, CallbackInfo _ci) {
         if(world.isClient) return;
 
-        ActionResult result = BlockUpdateCallback.EVENT.invoker().onBlockUpdate(world, pos, block, posFrom);
+        BlockUpdateCallback.EVENT.invoker().onBlockUpdate(world, pos, block, posFrom);
     }
 }

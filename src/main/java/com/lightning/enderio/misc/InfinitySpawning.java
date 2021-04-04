@@ -1,7 +1,6 @@
 package com.lightning.enderio.misc;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
 
